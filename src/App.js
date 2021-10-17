@@ -7,7 +7,8 @@ function App() {
 
   return (
     <div className="App">
-      <input onChange={(element) => setText(element.target.value)} value={text}/>
+      <h1 className="input-indicator">Coloque o link no campo abaixo</h1>
+      <input onChange={(element) => setText(element.target.value)} value={text} placeholder="Link"/>
       <QRCodeCanvas text={text}/>
     </div>
   );
